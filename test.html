@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foot Base</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .foot-base {
+  width: 300px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
+  background-color: #f5d9b9; /* Skin tone */
+  border-radius: 50px 0 0 50px; /* Rounded heel */
+  margin: 0 auto; /* Center the foot */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.heel {
+  width: 70px;
+  height: 70px;
+  background-color: #d7b899; /* Darker skin tone for heel */
+  border-radius: 50px 0 0 0; /* Round the bottom of the heel */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.sole {
+  width: 230px;
+  height: 70px;
+  background-color: #f5d9b9;
+  position: absolute;
+  bottom: 0;
+  left: 70px;
+}
+
+.arch {
+  width: 120px;
+  height: 25px;
+  background-color: #f0cbb2; /* Lighter tone for arch */
+  border-radius: 20px;
+  position: absolute;
+  bottom: 30px;
+  left: 55px;
+}
+
+.ball {
+  width: 70px;
+  height: 35px;
+  background-color: #f0cbb2; /* Lighter tone for ball of the foot */
+  border-radius: 50% / 20px; /* Elliptical shape for ball */
+  position: absolute;
+  bottom: 10px;
+  left: 160px;
+}
+
+.toes {
+  width: 140px;
+  height: 35px;
+  background-color: #f5d9b9;
+  position: absolute;
+  bottom: 35px;
+  left: 80px;
+}
+
+.big-toe,
+.second-toe,
+.third-toe,
+.fourth-toe,
+.little-toe {
+  width: 25px;
+  height: 30px;
+  background-color: #f5d9b9;
+  border-radius: 10px; /* Rounded toe tips */
+  float: left; /* Arrange toes side-by-side */
+  margin-left: 5px;
+}
+
+.little-toe {
+  margin-left: 0; /* Remove margin for the last toe */
+}
+
+.big-toe {
+  transform: rotateZ(15deg); /* Slight angle for the big toe */
+}
+
+  </style>
+</head>
+<body>
+  <div class="foot-base">
+    <div class="heel"></div>
+    <div class="sole">
+      <div class="arch"></div>
+      <div class="ball"></div>
+    </div>
+    <div class="toes">
+      <div class="big-toe"></div>
+      <div class="second-toe"></div>
+      <div class="third-toe"></div>
+      <div class="fourth-toe"></div>
+      <div class="little-toe"></div>
+    </div>
+  </div>
+</body>
+</html>
